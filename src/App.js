@@ -18,7 +18,8 @@ class App extends React.Component {
 	componentDidMount() {
 		fetch(
 "http://demo2211087.mockable.io/mock",{
-  method: "POST"
+  method: "POST",
+  headers: {'Content-Type':'application/json'}
   }
 )
 			.then((res) => res.json())
